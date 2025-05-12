@@ -1,0 +1,31 @@
+# 忽略Python编译文件
+__pycache__/
+*.py[cod]
+
+# 忽略环境配置文件
+*.env
+
+# 忽略上传的临时文件和视频
+uploads/
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# 忽略日志文件
+*.log
+
+# 忽略数据库文件
+db/*.db
+
+# 忽略IDE和系统文件
+.vscode/
+.idea/
+.DS_Store
+
+# 忽略编译生成的文件
+build/
+dist/
+*.o
+*.so
+*.dll

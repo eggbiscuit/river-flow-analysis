@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 3.10)
+
+# 项目名称
+project(lk_optical_flow)
+
+# 设置 C++ 标准
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+# 查找 OpenCV
+find_package(OpenCV REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+
+# 添加头文件路径
+include_directories(${PROJECT_SOURCE_DIR}/include)
+
+# 创建可执行文件
+add_executable(lk_optical_flow lk_optical_flow.cpp)
+
+# 链接 OpenCV 库
+target_link_libraries(lk_optical_flow ${OpenCV_LIBS})
